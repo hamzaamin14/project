@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href="./img/MARU__1_-removebg-preview.png" type="image/x-icon">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- home slider cdn--------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--------------- AOS ----------------------->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/login.css">
+  <title>Maru Dry Friuts</title>
+  <style>
+    .error{
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="top">
+    <marquee class="marq" behavior="" direction="">Enjoy Free Delivery Nationwide For Order Abover PKR 10,000. The
+      Standard Delivery Charges are 1KG RS.100 on Below 3,000 Shoping. Online
+      Order Will Be Deliver In 3 To 5 Working Days</marquee>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: rgb(111, 172, 20);">
+    <div class="container-fluid">
+      <img id="logo-pic" src="./img/MARU__1_-removebg-preview.png" style="height: 80px; width: 150px;" alt="logo" class="navbar-logo">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <span class="navbar-toggler-icon "></span> -->
+        <span class=""><i class="fa-solid fa-bars text-light"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Variety
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item text-dark" href="./Almonds.html">Almonds</a></li>
+              <li><a class="dropdown-item text-dark" href="./Dates.html">Dates</a></li>
+              <li><a class="dropdown-item text-dark" href="./Wallnuts.html">Wallnuts</a></li>
+              <li><a class="dropdown-item text-dark" href="./Peanuts.html">Peanuts</a></li>
+              <li><a class="dropdown-item text-dark" href="./Cashew.html">Cashew</a></li>
+              <li><a class="dropdown-item text-dark" href="./Pistachios.html">Pistachios</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="./about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="./contact.html">Contact Us</a>
+          </li>
+        </ul>
+        <div>
+            <a href="./Login.html"  class="btn ml-auto" style="background-color: white; color: rgb(111,172,20);">LogIn</a>
+            <a href="./Login.html" class="btn ml-auto"  style="background-color: white; color: rgb(111,172,20);">Signup</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- login page -->
+    
+  <div class="section">
+    <form action="" id="myform">
+    <div class="container">
+      <div class="row full-height justify-content-center">
+        <div class="col-12 text-center align-self-center py-5">
+          <div class="section pb-5 pt-5 pt-sm-2 text-center">
+            <h6 class="mb-0 pb-3" style="font-size: 1rem;"><span>Log In</span><span>Sign Up</span></h6>
+                  <input class="checkbox" required type="checkbox" id="reg-log" name="reg-log"/>
+                  <label for="reg-log"></label>
+            <div class="card-3d-wrap mx-auto">
+              <div class="card-3d-wrapper">
+                <div class="card-front">
+                  <div class="center-wrap">
+                    <div class="section text-center">
+                      <h4 class="mb-4 pb-3">Welcome To Maru Dry Friuts</h4>
+                      <div class="form-group">
+                        <input name="email" type="email"  class="form-style" placeholder="Your Email" id="logemail" autocomplete="off" required>
+                        <i class="input-icon uil uil-at"></i>
+                      </div>	
+                      <div class="form-group mt-2">
+                        <input name="password" type="password"  class="form-style" placeholder="Your Password" id="logpass" autocomplete="off" required>
+                        <i class="input-icon uil uil-lock-alt"></i>
+                      </div>
+                      <a href="#" class="btn-submit logbtn mt-4">submit</a>
+                      <div id="liveAlertPlaceholder"></div>
+                         <p class="mb-0 mt-4 text-center"><a href="#0" class="link" style="text-decoration: none;">Forgot your password?</a></p>
+                        </div>
+                      </div>
+                    </div>
+                <div class="card-back">
+                  <div class="center-wrap">
+                    <div class="section text-center">
+                      <h4 class="mb-4 pb-3">Sign Up</h4>
+                      <div class="form-group">
+                        <input type="text" name="name" class="form-style" placeholder="Your Full Name" id="logname" autocomplete="off"required>
+                        <i class="input-icon uil uil-user"></i>
+                      </div>	
+                      <div class="form-group mt-2">
+                        <input type="email" name="email" class="form-style" placeholder="Your Email" id="logemail" autocomplete="off" required>
+                        <i class="input-icon uil uil-at"></i>
+                      </div>	
+                      <div class="form-group mt-2">
+                        <input type="password" name="password" class="form-style" placeholder="Your Password" id="logpass" autocomplete="off" required>
+                        <i class="input-icon uil uil-lock-alt"></i>
+                      </div>
+                      <a href="#" class="btn-submit  mt-4">submit</a>
+                      <div id="liveAlertPlaceholder"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </form>
+  </div>
+  
+
+  
+
+  <!-- Footer -->
+  <div style="background-color: #222222">
+    <div class="container">
+      <footer class="py-5">
+        <div class="row">
+          <div class="col">
+            <ul class="nav flex-column align-items-center sm-align-items-center">
+              <li class="nav-item mb-2">
+                <a href="./index.html" class="nav-link p-0 text-light ">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-light">Variety</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="./about.html" class="nav-link p-0 text-light">About Us</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="./contact.html" class="nav-link p-0 text-light">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col d-none d-sm-none d-lg-block">
+            <ul class="nav flex-column sm-align-items-center">
+              <li class="nav-item mb-2">
+                <a href="./Almonds.html" class="nav-link p-0 text-light">Almonds</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="./Dates.html" class="nav-link p-0 text-light">Dates</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="./Cashew.html" class="nav-link p-0 text-light">Cashews</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="./Wallnuts.html" class="nav-link p-0 text-light">Wallnuts</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col d-none d-sm-none d-lg-block">
+            <ul class="nav flex-column sm-align-items-center">
+              <li class="nav-item mb-2">
+                <a href="./Peanuts.html" class="nav-link p-0 text-light">Peanuts</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="./Pistachios.html" class="nav-link p-0 text-light">Pistachios</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col d-none d-sm-none d-lg-block">
+            <h5 class="text-light">Subscribe for Best Quality</h5>
+            <p class="text-light">Get Special Discount & Get Healthy</p>
+            <div class="d-flex w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn text-light" type="button" style="background-color: rgb(111, 172, 20);;">Subscribe</button>
+            </div>
+          </div>
+
+          <div class="d-flex text-light justify-content-between py-4 my-4 border-top">
+            <p>© 2023 Maru Dry Fruits, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3">
+                <a class="link" target="_blank" href="https://www.instagram.com"><i style="font-size: 20px" class="fa-brands text-light fa-instagram"></i></a>
+              </li>
+              <li class="ms-3">
+                <a class="link" target="_blank" href="http://www.facebook.com"><i style="font-size: 20px" class="fa-brands text-light fa-facebook"></i></a>
+              </li>
+              <li class="ms-3">
+                <a class="link" target="_blank" href="http://www.whatsapp.com"><i style="font-size: 20px" class="fa-brands text-light fa-whatsapp"></i></a>
+              </li>
+            </ul>
+          </div>
+      </footer>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- AOS JAVA -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('.element', {
+      strings: [
+        "All Dry Fruits.",
+        "Peanuts",
+        "Almonds",
+        "Cashews",
+        "Wallnuts",
+        "Dates"
+      ],
+      typeSpeed: 100,
+      loop: true,
+      backSpeed: 40,
+    });
+
+    
+    var typed1 = new Typed(".element1", {
+      strings: [
+        "All Dry Fruits.",
+        "Peanuts",
+        "Almonds",
+        "Cashews",
+        "Wallnuts",
+        "Dates",
+      ],
+      typeSpeed: 100,
+      loop: true,
+      backSpeed: 40,
+    });
+
+    var typed2 = new Typed(".element2", {
+      strings: [
+        "All Dry Fruits.",
+        "Peanuts",
+        "Almonds",
+        "Cashews",
+        "Wallnuts",
+        "Dates",
+      ],
+      typeSpeed: 100,
+      loop: true,
+      backSpeed: 40,
+    });
+    AOS.init();
+
+    
+  </script>
+  
+ 
+  <script
+src="https://code.jquery.com/jquery-3.7.1.js"
+integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <script>
+          $('.owl-carousel').owlCarousel({
+          loop:true,
+          margin:10,
+          nav:true,
+          responsive:{
+              0:{
+                  items:1
+              },
+              600:{
+                  items:5
+              },
+              1000:{
+                  items:3
+              }
+          }
+      })
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js" integrity="sha512-WMEKGZ7L5LWgaPeJtw9MBM4i5w5OSBlSjTjCtSnvFJGSVD26gE5+Td12qN5pvWXhuWaWcVwF++F7aqu9cvqP0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script>
+        jQuery('#login').validate({
+          rules:{
+            email:{
+              required : true,
+              email : true
+            },
+            password:{
+              required : true,
+              minlength : 8
+            }
+          },
+          messages:{
+            email:{
+              required : "Email must be required",
+              email : "Please Enter a valid email"
+            },
+            password:{
+              required : "Password must be required",
+              minlength : "Password must be 8 characters or more"
+            }
+          }
+        })
+      </script>
+       <script>
+        var email = document.querySelector('.email');
+        var logbtn = document.querySelector('.logbtn');
+        var alert = document.querySelector(".alert");
+        alert.style.display = "none";
+        </script>
+</body>
+
+
+
+</html>

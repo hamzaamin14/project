@@ -1,0 +1,312 @@
+.container-fluid img{
+    height: 150px;
+    width: 200px;
+}
+.error{
+	color: red;
+  }
+
+/*---------------------
+  Contact
+-----------------------*/
+
+.contact {
+	padding-top: 80px;
+	padding-bottom: 50px;
+}
+
+.contact__widget {
+	margin-bottom: 30px;
+}
+
+.contact__widget span {
+	font-size: 36px;
+	color: #7fad39;
+}
+
+.contact__widget h4 {
+	color: #1c1c1c;
+	font-weight: 700;
+	margin-bottom: 6px;
+	margin-top: 18px;
+}
+
+.contact__widget p {
+	color: #666666;
+	margin-bottom: 0;
+}
+
+
+
+/*---------------------
+  Map
+-----------------------*/
+
+.map {
+	height: 500px;
+	position: relative;
+}
+
+.map iframe {
+	width: 100%;
+}
+
+.map .map-inside {
+	position: absolute;
+	left: 50%;
+	top: 160px;
+	-webkit-transform: translateX(-175px);
+	-ms-transform: translateX(-175px);
+	transform: translateX(-175px);
+}
+
+.map .map-inside i {
+	font-size: 48px;
+	color: #7fad39;
+	position: absolute;
+	bottom: -75px;
+	left: 50%;
+	-webkit-transform: translateX(-18px);
+	-ms-transform: translateX(-18px);
+	transform: translateX(-18px);
+}
+
+.map .map-inside .inside-widget {
+	width: 350px;
+	background: #ffffff;
+	text-align: center;
+	padding: 23px 0;
+	position: relative;
+	z-index: 1;
+	-webkit-box-shadow: 0 0 20px 5px rgba(12, 7, 26, 0.15);
+	box-shadow: 0 0 20px 5px rgba(12, 7, 26, 0.15);
+}
+
+.map .map-inside .inside-widget:after {
+	position: absolute;
+	left: 50%;
+	bottom: -30px;
+	-webkit-transform: translateX(-6px);
+	-ms-transform: translateX(-6px);
+	transform: translateX(-6px);
+	border: 12px solid transparent;
+	border-top: 30px solid #ffffff;
+	content: "";
+	z-index: -1;
+}
+
+.map .map-inside .inside-widget h4 {
+	font-size: 22px;
+	font-weight: 700;
+	color: #1c1c1c;
+	margin-bottom: 4px;
+}
+
+.map .map-inside .inside-widget ul li {
+	list-style: none;
+	font-size: 16px;
+	color: #666666;
+	line-height: 26px;
+}
+
+/*---------------------
+  Contact Form
+-----------------------*/
+
+.contact__form__title {
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.contact__form__title h2 {
+	color: #1c1c1c;
+	font-weight: 700;
+}
+
+.contact-form {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.contact-form form input {
+	width: 100%;
+	height: 50px;
+	font-size: 16px;
+	color: #6f6f6f;
+	padding-left: 20px;
+	margin-bottom: 30px;
+	border: 1px solid #ebebeb;
+	border-radius: 4px;
+}
+
+.contact-form form input::placeholder {
+	color: #6f6f6f;
+}
+
+.contact-form form textarea {
+	width: 100%;
+	height: 150px;
+	font-size: 16px;
+	color: #6f6f6f;
+	padding-left: 20px;
+	margin-bottom: 24px;
+	border: 1px solid #ebebeb;
+	border-radius: 4px;
+	padding-top: 12px;
+	resize: none;
+}
+
+.contact-form form textarea::placeholder {
+	color: #6f6f6f;
+}
+
+.contact-form form button {
+	font-size: 18px;
+	letter-spacing: 2px;
+}
+
+
+/* cards  */
+.cards{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    width: 350px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+	box-shadow: 5px 5px 5px gray;
+    margin: 0px 4px;
+}
+
+.card img{
+    width: 300px;
+    height: 280px;
+    border-radius: 12px;
+}
+.card-d{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.card-d p{
+    padding: 0px 20px;
+}
+.buy-btn{
+    width: 90%;
+}
+
+
+/* --------------home-two-cards---------------- */
+#home-two-cards img{
+	margin: 0% auto;
+}
+#home-two-cards{
+	text-align: center;
+}
+.owl-carousel .item{
+	height: 300px;
+	width: 300px ;
+}
+
+/* -----------about setion img */
+@media (max-width : 1201px) {
+	#home-scards{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+}
+
+	
+@media (max-width:440px) {
+	#home-small-card{
+		display: flex;
+		flex-direction: column;
+	}
+	
+}
+@media (max-width:820px) {
+	#home-small-card{
+		margin: 0% auto;
+	
+	}
+	
+}
+
+@media (max-width : 1040px){
+    .card{
+        width: 300px;
+        height: 400px;
+    }
+    
+    .card img{
+        width: 230px;
+        height: 200px;
+    }
+
+    .card-d h3{
+        font-size: 20px;
+    }
+}
+
+@media (max-width : 720px){
+    .card{
+        width: 270px;
+        height: 380px;
+    }
+    
+    .card img{
+        width: 180px;
+        height: 150px;
+    }
+
+    .card-d h3{
+        line-height: 200%;
+        font-size: 15px;
+    }
+    .card-d p{
+        font-size: 15px;
+    }
+}
+
+@media (max-width : 600px){
+    .cards{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        margin: 4px 0px;
+        width: 90%;
+        height: 400px;
+    }
+    
+    .card img{
+        width: 230px;
+        height: 200px;
+    }
+
+    .card-d h3{
+        font-size: 20px;
+    }
+}
+@media (max-width : 281px) {
+    #footer-btn{
+        width: 60px;
+        font-size: x-small;
+    }
+    #footer.name{
+        font-size: xx-small;
+    }
+}

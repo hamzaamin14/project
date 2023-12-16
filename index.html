@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" href="./img/MARU__1_-removebg-preview.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- home slider cdn--------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--------------- AOS ----------------------->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <title>Maru Dry Friuts</title>
+</head>
+
+<body>
+  <div class="top">
+    <marquee class="marq" behavior="" direction="">Enjoy Free Delivery Nationwide For Order Abover PKR 10,000. The
+      Standard Delivery Charges are 1KG RS.100 on Below 3,000 Shoping. Online
+      Order Will Be Deliver In 3 To 5 Working Days</marquee>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: rgb(111, 172, 20);">
+    <div class="container-fluid">
+      <img id="logo-pic" src="./img/MARU__1_-removebg-preview.png" style="height: 80px; width: 150px;" alt="logo" class="navbar-logo">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <span class="navbar-toggler-icon "></span> -->
+        <span class=""><i class="fa-solid fa-bars text-light"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Variety
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item text-dark" href="./Almonds.html">Almonds</a></li>
+              <li><a class="dropdown-item text-dark" href="./Dates.html">Dates</a></li>
+              <li><a class="dropdown-item text-dark" href="./Wallnuts.html">Wallnuts</a></li>
+              <li><a class="dropdown-item text-dark" href="./Peanuts.html">Peanuts</a></li>
+              <li><a class="dropdown-item text-dark" href="./Cashew.html">Cashew</a></li>
+              <li><a class="dropdown-item text-dark" href="./Pistachios.html">Pistachios</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="./about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="./contact.html">Contact Us</a>
+          </li>
+        </ul>
+        <div>
+          <a href="./Login.html" class="btn ml-auto" style="background-color: white; color: rgb(111,172,20);">LogIn</a>
+          <a href="./Login.html" class="btn ml-auto"  style="background-color: white; color: rgb(111,172,20);">Signup</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  
+
+  <!------------------------------ Modal signup---------------------------------- -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="exampleModalLabel">Create Account</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+  
+    <div><P style="text-align: center;">Please register below account detail</P>
+      </div>
+      <form class="container my-2" style="align-items: center;">
+          <div class="row mb-3">
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputName" placeholder="First Name" required>
+            </div>
+            <div class="col-sm-10 my-2">
+              <input type="text" class="form-control" id="inputName" placeholder="Last Name" required>
+            </div>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="inputEmail3" placeholder="Email" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword3" placeholder="Password" required>
+            </div>
+          </div>
+        
+          
+        </form>
+      <div class="modal-footer">
+        <button type="button" class="btn-create" style="margin: 0% auto; background-color: rgb(111, 172, 20); border: none; color: white; padding: 0.5rem 50px;">Create</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- ----------------------------modal login------------------------------------------ -->
+
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Welcome to Maru Dry Friuts</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form class="container">
+        <div class="mb-3">
+          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" aria-describedby="emailHelp" required>
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+        </div>
+      </form>
+      <div class="modal-footer">
+        <button type="button" class="btn-create" style="margin: 0% auto; background-color: rgb(111, 172, 20); border: none; color: white; padding: 0.5rem 50px;">Login</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Home section start -->
+  <!-- --------------------Home section start----------------------------------- -->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./img/home 1.webp" class="d-block w-100" alt="home-pic1" />
+        <div class="carousel-caption d-none d-md-block">
+          <h1 style="font-size: 5rem"><span class="element"></span></h1>
+          <p>We Have Available of All Kind And Categories Of Dry Fruits</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./img/home 2.webp" class="d-block w-100" alt="home-pic2" />
+        <div class="carousel-caption d-none d-md-block">
+          <h1 style="font-size: 5rem"><span class="element1"></span></h1>
+          <p>We Have Available of All Kind And Categories Of Dry Fruits</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./img/home 3.webp" class="d-block w-100" alt="home-pic2" />
+        <div class="carousel-caption d-none d-md-block">
+          <h1 style="font-size: 5rem"><span class="element2"></span></h1>
+          <p>We Have Available of All Kind And Categories Of Dry Fruits</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- home  small cards-->
+  <div class="container" d-flex id="home-scards">
+    <div id="home-small-card" class="container d-flex">
+      <div data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine" class="card" style="width: 12rem; height: 10rem; margin: 20px auto">
+        <img src="./img/home section/almonds.webp" style="height: 5rem; width: 6rem" class="card-img-top" alt="almomds" />
+        <div class="card-body">
+          <p class="card-text fw-bold">Almonds</p>
+        </div>
+      </div>
+      <div data-aos="flip-left" class="card" style="width: 12rem; height: 10rem; margin: 20px auto">
+        <img src="./img/home section/apricot.webp" style="height: 5rem; width: 6rem" class="card-img-top" alt="apricot" />
+        <div class="card-body">
+          <p class="card-text fw-bold">Apricot</p>
+        </div>
+      </div>
+      <div data-aos="flip-right" class="card" style="width: 12rem; height: 10rem; margin: 20px auto">
+        <img src="./img/home section/cashews.webp" style="height: 5rem; width: 6rem" class="card-img-top" alt="cashews" />
+        <div class="card-body">
+          <p class="card-text fw-bold">Cashews</p>
+        </div>
+      </div>
+      <div data-aos="fade-left"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine" class="card" style="width: 12rem; height: 10rem; margin: 20px auto">
+        <img src="./img/home section/chakwal rewri.webp" style="height: 5rem; width: 6rem" class="card-img-top"
+          alt="rewri" />
+        <div class="card-body">
+          <p class="card-text fw-bold">Rewri</p>
+        </div>
+      </div>
+    </div>
+    <div id="home-small-card" class="container d-flex">
+      <div data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine" class="card" style="width: 12rem; height: 10rem; margin: 20px auto">
+        <img src="./img/home section/dates.webp" style="height: 5rem; width: 6rem" class="card-img-top" alt="dates" />
+        <div class="card-body">
+          <p class="card-text fw-bold">Dates</p>
+        </div>
+      </div>
+      <div data-aos="flip-left" class="card" style="width: 12rem; height: 10rem; margin: 20px auto">
+        <img src="./img/home section/dried figs.webp" style="height: 5rem; width: 6rem" class="card-img-top"
+          alt="figs" />
+        <div class="card-body">
+          <p class="card-text fw-bold">Figs</p>
+        </div>
+      </div>
+      <div data-aos="flip-right" class="card" style="width: 12rem; height: 10rem; margin: 20px auto">
+        <img src="./img/home section/organic honey.webp" style="height: 5rem; width: 6rem" class="card-img-top"
+          alt="honey" />
+        <div class="card-body">
+          <p class="card-text fw-bold">Honey</p>
+        </div>
+      </div>
+      <div data-aos="fade-left"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine" class="card" style="width: 12rem; height: 10rem; margin: 20px auto">
+        <img src="./img/home section/peanuts.webp" style="height: 5rem; width: 6rem" class="card-img-top" alt="peanuts"/>
+        <div class="card-body">
+          <p class="card-text fw-bold">Peanuts</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- -----home latitude four cards-------------- -->
+  <div id="home-two-cards" class="container">
+    <hr />
+    <div class="card-img" data-aos="fade-up" data-aos-duration="3000"
+    data-aos-anchor-placement="center-bottom">
+      <img src="./img/home section/home y-card.webp" class="d-block w-50" alt="spices" />
+      <div class="card-h5">
+        <h5 class="fw-bold">100% organic Spices</h5>
+        <p>Fresh Food</p>
+      </div>
+    </div>
+    <hr />
+    <div class="card-img" data-aos="fade-up" data-aos-duration="3000"
+    data-aos-anchor-placement="center-bottom">
+      <img src="./img/home section/home ycard2.webp" class="d-block w-50" alt="seeds" />
+      <div class="card-h5">
+        <h5 class="fw-bold">Premium Seeds</h5>
+        <p>Fresh Seeds</p>
+      </div>
+    </div>
+    <hr />
+    <div class="card-img" data-aos="fade-up" data-aos-duration="3000"
+    data-aos-anchor-placement="center-bottom">
+      <img src="./img/home section/dry.webp" class="d-block w-50" alt="nuts" />
+      <div class="card-h5">
+        <h5 class="fw-bold">Fresh Dry Friuts</h5>
+        <p>Winter Nuts</p>
+      </div>
+    </div>
+    <hr />
+    <div class="card-img" data-aos="fade-up" data-aos-duration="3000"
+    data-aos-anchor-placement="center-bottom">
+      <img src="./img/home section/prod.webp" class="d-block w-50" alt="dry fiuts" />
+      <div>
+        <h5 class="fw-bold">Premium Quality</h5>
+        <p>Proud of <span class="text-success fw-bold"> Pakistan</span></p>
+      </div>
+    </div>
+    <hr />
+  </div>
+
+  <!-- -----------home slider cards  ---------------->
+  <div class="container">
+    <h3 style="color: rgb(111, 172, 20); text-align: center; font-family: 'Dancing Script';">GIFT BOXES</h3>
+    <hr>
+  </div>
+  <div class="owl-carousel owl-theme container">
+    <div class="item"><img class="img-fluid" src="./img/home cards/images (1).jpg"alt=""></div>
+    <div class="item"><img class="img-fluid" src="./img/home cards/assorted-baklavas-dry-fruits-chocolates-rajgharana-gift-box-premium-diwali-sweets-dry-fruits-gift-box-478701.webp" alt=""></div>
+    <div class="item"><img class="img-fluid" src="./img/home cards/images (3).jpg" alt=""></div>
+    <div class="item"><img src="./img/home cards/images (4).jpg" alt=""></div>
+    <div class="item"><img src="./img/home cards/images.jpg" alt=""></div>
+    <div class="item"><img src="./img/home cards/Acrylic-Dry-Fruit-Box.jpg" alt=""></div>
+    <div class="item"><img src="./img/home cards/images (6).jpg" alt=""></div>
+    <div class="item"><img src="./img/home cards/assorted-baklavas-dry-fruits-chocolates-rajgharana-gift-box-premium-diwali-sweets-dry-fruits-gift-box-478701.webp" alt=""></div>
+    <div class="item"><img src="./img/home cards/download.jpg" alt=""></div>
+    <div class="item"><img src="./img/home cards/gift 1.jpg" alt=""></div>
+    <div class="item"><img src="./img/home cards/images.jpg" alt=""></div>
+    <div class="item"><img src="./img/home cards/images (5).jpg" alt=""></div>
+</div>
+<hr>
+
+
+  
+
+  <!-- Footer -->
+  <div style="background-color: #222222">
+    <div class="container">
+      <footer class="py-5">
+        <div class="row">
+          <div class="col">
+            <ul class="nav flex-column align-items-center sm-align-items-center">
+              <li class="nav-item mb-2">
+                <a href="./index.html" class="nav-link p-0 text-light ">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-light">Variety</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="./about.html" class="nav-link p-0 text-light">About Us</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="./contact.html" class="nav-link p-0 text-light">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col d-none d-sm-none d-lg-block">
+            <ul class="nav flex-column sm-align-items-center">
+              <li class="nav-item mb-2">
+                <a href="./Almonds.html" class="nav-link p-0 text-light">Almonds</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="./Dates.html" class="nav-link p-0 text-light">Dates</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="./Cashew.html" class="nav-link p-0 text-light">Cashews</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="./Wallnuts.html" class="nav-link p-0 text-light">Wallnuts</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col d-none d-sm-none d-lg-block">
+            <ul class="nav flex-column sm-align-items-center">
+              <li class="nav-item mb-2">
+                <a href="./Peanuts.html" class="nav-link p-0 text-light">Peanuts</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="./Pistachios.html" class="nav-link p-0 text-light">Pistachios</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col d-none d-sm-none d-lg-block">
+            <h5 class="text-light">Subscribe for Best Quality</h5>
+            <p class="text-light">Get Special Discount & Get Healthy</p>
+            <div class="d-flex w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn text-light" type="button" style="background-color: rgb(111, 172, 20);;">Subscribe</button>
+            </div>
+          </div>
+
+          <div class="d-flex text-light justify-content-between py-4 my-4 border-top">
+            <p>© 2023 Maru Dry Fruits, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3">
+                <a class="link" target="_blank" href="https://www.instagram.com"><i style="font-size: 20px" class="fa-brands text-light fa-instagram"></i></a>
+              </li>
+              <li class="ms-3">
+                <a class="link" target="_blank" href="http://www.facebook.com"><i style="font-size: 20px" class="fa-brands text-light fa-facebook"></i></a>
+              </li>
+              <li class="ms-3">
+                <a class="link" target="_blank" href="http://www.whatsapp.com"><i style="font-size: 20px" class="fa-brands text-light fa-whatsapp"></i></a>
+              </li>
+            </ul>
+          </div>
+      </footer>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- AOS JAVA -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('.element', {
+      strings: [
+        "All Dry Fruits.",
+        "Peanuts",
+        "Almonds",
+        "Cashews",
+        "Wallnuts",
+        "Dates"
+      ],
+      typeSpeed: 100,
+      loop: true,
+      backSpeed: 40,
+    });
+
+    
+    var typed1 = new Typed(".element1", {
+      strings: [
+        "All Dry Fruits.",
+        "Peanuts",
+        "Almonds",
+        "Cashews",
+        "Wallnuts",
+        "Dates",
+      ],
+      typeSpeed: 100,
+      loop: true,
+      backSpeed: 40,
+    });
+
+    var typed2 = new Typed(".element2", {
+      strings: [
+        "All Dry Fruits.",
+        "Peanuts",
+        "Almonds",
+        "Cashews",
+        "Wallnuts",
+        "Dates",
+      ],
+      typeSpeed: 100,
+      loop: true,
+      backSpeed: 40,
+    });
+    AOS.init();
+
+    
+  </script>
+  
+ 
+
+                            
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <script>
+          $('.owl-carousel').owlCarousel({
+          loop:true,
+          margin:10,
+          nav:true,
+          responsive:{
+              0:{
+                  items:1
+              },
+              600:{
+                  items:5
+              },
+              1000:{
+                  items:3
+              }
+          }
+      })
+      </script>
+
+
+</html>
